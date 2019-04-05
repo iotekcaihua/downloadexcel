@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#download").click(function () {
+                var birth = $("input[name='birth']").eq(0).val();
+                window.location.href="/people/findPeople?birth="+birth;
+            })
+        })
+    </script>
+</head>
+<body>
+<input name="birth" type="date">
+<button id="download">下载人员信息</button>
+</body>
+</html>
